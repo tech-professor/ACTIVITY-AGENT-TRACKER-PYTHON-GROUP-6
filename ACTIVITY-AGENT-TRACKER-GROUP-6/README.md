@@ -1,6 +1,11 @@
 # Activity Tracker Agent
-
-we manage every configuration throufh erbsite also , please check it.
+GROUP - 6		
+(Deepesh Mishra -	7078023111	- deepeshmishra444@gmail.com)
+Brajendra Singh Pal	7355053477	palbrajendrasinghpal@gmail.com
+dheeraj kumar	9546448566	dheerajroydss@gmail.com
+Divyanshu kumar singh	8218618312	divyanshukumarsingh32@gmail.com
+Garv Singh	7982823197	garvkrsingh100@gmail.com
+we manage every configuration throufh website also , please check it.
 ## Overview
 The **Activity Tracker Agent** is a Python-based program that runs in the background on a user's machine to track system activity. It captures screenshots at configurable intervals, tracks user inputs, and uploads activity data to AWS S3. Additionally, it monitors timezone changes and handles other configurable options, such as blurring screenshots.
 
