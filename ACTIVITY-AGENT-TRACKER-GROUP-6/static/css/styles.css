@@ -1,0 +1,102 @@
+/* Global Styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #303030; /* Dark grey background */
+  color: #ffffff; /* White text color */
+  font-family: 'Inter', sans-serif; /* Use Google Font */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px; /* Set max-width for the container */
+  background: #444; /* Darker grey for the form background */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+}
+
+.form-group {
+  position: relative; /* Position relative for label positioning */
+  margin-bottom: 20px; /* Space between form fields */
+}
+
+.form__input {
+  width: 100%; /* Full width */
+  height: 2.5rem;
+  padding: 0 1.25rem;
+  border: 1px solid #909090; /* Grey border */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 5px; /* Space above the input */
+  background-color: #666; /* Grey background for input */
+  color: #ffffff; /* White text color for input */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: #007BFF; /* Blue border on focus */
+}
+
+.form__label {
+  font-size: 1rem;
+  color: #909090; /* Grey label color */
+  position: absolute; /* Absolute positioning for label */
+  left: 10px; /* Adjusted position */
+  top: 10px; /* Initial position */
+  transition: all 0.3s; /* Smooth transition */
+}
+
+/* Move label up when input is focused or filled */
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  top: -10px; /* Move label up */
+  left: 10px; /* Adjusted position */
+  font-size: 0.8rem; /* Smaller font size */
+  color: #007BFF; /* Change label color */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; /* Increase font size */
+  transition: background-color 0.3s; /* Smooth transition for button */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.explanation {
+  margin-top: 20px; 
+  text-align: center; 
+}
+
+.explanation ul {
+  list-style: none; 
+}

@@ -1,0 +1,23 @@
+# Activity Tracker Configuration
+
+# Screenshot Settings
+screenshot_interval = 300       # Interval for taking screenshots (in seconds)
+blur_screenshots = false        # Set to true to enable blurring of screenshots
+
+# Scripted Activity Detection
+scripted_activity_threshold = 500  # Threshold for detecting scripted mouse movements (in pixels)
+
+# Battery Settings
+low_battery_threshold = 20       # Battery percentage below which tracking will pause
+
+# AWS S3 Settings
+aws_access_key_id = AKIAS2VS4XVD4XCLEHPQ    
+aws_secret_access_key = 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  
+s3_bucket_name = my-pythonproject           
+
+# Logging Settings
+log_activity_to_file = true        # Set to true to log activities to a file
+activity_log_file = activity_logs.txt  # Log file name
+
+# Debugging
+debug_mode = true                  # Set to true to enable debugging messages

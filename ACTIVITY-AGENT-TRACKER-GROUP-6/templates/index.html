@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Tracker Configuration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="cta-form">
+            <h2>Activity Tracker Configuration</h2>
+            <p>Configure your activity tracker settings below:</p>
+        </div>
+        <form action="" class="form" id="config-form">
+            <div class="form-group">
+                <input type="number" placeholder="Screenshot Interval (seconds)" class="form__input" id="interval" value="300" required />
+                <label for="interval" class="form__label">Screenshot Interval (seconds)</label>
+            </div>
+
+            <div class="form-group">
+                <select class="form__input" id="blur" name="blur">
+                    <option value="false">Blur Screenshots: No</option>
+                    <option value="true">Blur Screenshots: Yes</option>
+                </select>
+                <label for="blur" class="form__label">Blur Screenshots</label>
+            </div>
+
+            <div class="form-group">
+                <input type="number" placeholder="Scripted Activity Threshold (pixels)" class="form__input" id="scripted_activity_threshold" value="500" required />
+                <label for="scripted_activity_threshold" class="form__label">Scripted Activity Threshold (pixels)</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="number" placeholder="Low Battery Threshold (%)" class="form__input" id="battery_threshold" value="20" required />
+                <label for="battery_threshold" class="form__label">Low Battery Threshold (%)</label>
+            </div>
+
+            <button type="submit">Update Configuration</button>
+        </form>
+    </div>
+    <div class="explanation">
+        <p>Below are the explanations for the settings you can configure in the activity tracker.</p>
+        <ul>
+            <li><strong>Screenshot Interval:</strong> Set how often screenshots are taken (in seconds).</li>
+            <li><strong>Blur Screenshots:</strong> Choose whether to apply a blur effect on captured screenshots.</li>
+            <li><strong>Scripted Activity Threshold:</strong> Define the threshold for detecting scripted mouse movements.</li>
+            <li><strong>Low Battery Threshold:</strong> Set the battery percentage below which tracking will pause.</li>
+        </ul>
+        <p>Use this form to ensure your activity tracker is configured to your preferences.</p>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
